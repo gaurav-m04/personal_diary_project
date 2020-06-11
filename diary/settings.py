@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'corsheaders',
     'phonenumber_field',
+    'algoliasearch_django',
 ]
 
 MIDDLEWARE = [
@@ -143,3 +144,9 @@ CORS_ORIGIN_ALLOW_ALL = False
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
 )
+
+# AlgoliaSearch settings
+ALGOLIA = {
+    'APPLICATION_ID': 'VTFBA8JO1V',
+    'API_KEY': 'b5f259bb600cb3345f130767c93be04f'
+}

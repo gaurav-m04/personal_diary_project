@@ -8,5 +8,6 @@ urlpatterns = [
     path('logout/', views.logout, name='user-logout'),
     path('stories/', views.ComposeList.as_view(), name='stories'),
     path('stories/<int:pk>/', views.ComposeDetail.as_view(), name='stories_details'),
-    path('contact/', views.conatct, name='contact')
+    path('contact/', views.contact, name='contact'),
+    path('search/', views.search, name='search')
 ]
